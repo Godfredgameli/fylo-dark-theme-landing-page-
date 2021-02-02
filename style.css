@@ -1,0 +1,113 @@
+/*Colors*/
+/*Typography*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+/*Headings, Call-to-actions, Header Navigation*/
+/*Body*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 1px solid red;
+}
+
+body, html {
+  background-color: #181f2a;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 900px 600px 500px 300px 300px 500px;
+  grid-template-areas: "intro" "benefits" "productive" "testimonial" "email-signup" "footer";
+  gap: 100px;
+}
+
+.main-wrapper section, .main-wrapper footer {
+  width: 100%;
+  padding: 0 5%;
+}
+
+.main-wrapper .intro {
+  grid-area: intro;
+  background-color: #1c2431;
+  background-image: url(images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.main-wrapper .intro nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-wrapper .intro nav ul {
+  list-style: none;
+}
+
+.main-wrapper .intro nav ul li {
+  display: inline;
+}
+
+.main-wrapper .intro nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.main-wrapper .intro nav ul li a:hover, .main-wrapper .intro nav ul li a :focus {
+  text-decoration: underline;
+}
+
+.main-wrapper .benefits {
+  grid-area: benefits;
+}
+
+.main-wrapper .productive {
+  grid-area: productive;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-wrapper .productive div {
+  width: 50%;
+  border-radius: 8px;
+}
+
+.main-wrapper .productive .illustration-wrapper img {
+  max-width: 100%;
+}
+
+.main-wrapper .testimonial {
+  grid-area: testimonial;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  background-image: url(images/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-position: 120px 0;
+}
+
+.main-wrapper .testimonial div {
+  width: 30%;
+  border-radius: 8px;
+  background-color: #202a3c;
+  height: 90%;
+}
+
+.main-wrapper .email-signup {
+  grid-area: email-signup;
+  background-color: #1c2431;
+}
+
+.main-wrapper .footer {
+  grid-area: footer;
+  background-color: #0b1523;
+}
+/*# sourceMappingURL=style.css.map */

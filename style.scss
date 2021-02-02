@@ -1,0 +1,120 @@
+/*Colors*/
+$intro_signup : hsl(217, 28%, 15%);
+$main_bg : hsl(218, 28%, 13%);
+$footer_bg : hsl(216, 53%, 9%);
+$testimonial_bg : hsl(219, 30%, 18%);
+$error : hsl(0, 100%, 63%);
+$button_blue : hsl(198, 60%, 50%);
+$button_cyan : hsl(176, 68%, 64%);
+$white : hsl(0, 0%, 100%);
+
+/*Typography*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/*Headings, Call-to-actions, Header Navigation*/
+$head_nav_button : Raleway;
+/*Body*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+$body : "Open Sans" ;
+$normal: 400;
+$bold : 700;
+$size: 14px;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+body, html {
+    background-color: $main_bg;
+    font-size: $size;
+    color: $white;
+    font-weight: $normal;
+}
+
+.main-wrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 900px 600px 500px 300px 300px 500px;
+    grid-template-areas: "intro" "benefits" "productive" "testimonial" "email-signup" "footer";
+    gap: 100px;
+
+    section, footer{
+        width: 100%;
+        padding: 0 5%;
+    }
+    .intro{
+        grid-area: intro;
+        background-color: $intro_signup;
+        background-image: url(images/bg-curvy-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            ul{
+               list-style: none;
+                li{
+                    display: inline;
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                        font-size: 16px;
+                        margin-right: 20px;
+
+                        &:hover, :focus{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                }
+        }
+    }
+    .benefits{
+        grid-area: benefits;
+    }
+    .productive{
+        grid-area: productive;
+        display: flex;
+        justify-content: space-between;
+
+        div{
+            width: 50%;
+            border-radius: 8px;
+        }
+        .illustration-wrapper{
+            img{
+                
+                max-width: 100%;
+            }
+        }
+    }
+    .testimonial{
+        grid-area: testimonial;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        background-image: url(images/bg-quotes.png);
+        background-repeat: no-repeat;
+        background-position: 120px 0;
+
+        div{
+            width: 30%;
+            border-radius: 8px;
+            background-color: $testimonial_bg;
+            height: 90%;
+        }
+    }
+    .email-signup{
+        grid-area: email-signup;
+        background-color: $intro_signup;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: $footer_bg;
+    }
+}
