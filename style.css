@@ -13,7 +13,7 @@
 
 body, html {
   background-color: #181f2a;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   font-weight: 400;
 }
@@ -21,7 +21,7 @@ body, html {
 .main-wrapper {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 900px 600px 500px 300px 300px 500px;
+  grid-template-rows: 900px 800px 500px 300px 300px 500px;
   grid-template-areas: "intro" "benefits" "productive" "testimonial" "email-signup" "footer";
   gap: 100px;
 }
@@ -38,12 +38,18 @@ body, html {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 
 .main-wrapper .intro nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .main-wrapper .intro nav ul {
@@ -57,26 +63,86 @@ body, html {
 .main-wrapper .intro nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
-  margin-right: 20px;
+  font-size: 18px;
+  margin-right: 30px;
 }
 
 .main-wrapper .intro nav ul li a:hover, .main-wrapper .intro nav ul li a :focus {
   text-decoration: underline;
 }
 
+.main-wrapper .intro header {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.main-wrapper .intro header img {
+  max-width: 100%;
+}
+
+.main-wrapper .intro header h1 {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.main-wrapper .intro header p {
+  font-size: 18px;
+}
+
+.main-wrapper .intro header .into-text {
+  width: 60%;
+}
+
+.main-wrapper .intro header .link a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 70px;
+  background-color: #339ecc;
+  border-radius: 20px;
+}
+
 .main-wrapper .benefits {
   grid-area: benefits;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-wrapper .benefits .ben-wrapper-top, .main-wrapper .benefits .ben-wrapper-bottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-wrapper .benefits .ben-wrapper-top div, .main-wrapper .benefits .ben-wrapper-bottom div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+}
+
+.main-wrapper .benefits .ben-wrapper-top div img, .main-wrapper .benefits .ben-wrapper-bottom div img {
+  height: 25%;
+  width: 25%;
 }
 
 .main-wrapper .productive {
   grid-area: productive;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .main-wrapper .productive div {
-  width: 50%;
+  width: 40%;
   border-radius: 8px;
 }
 
@@ -103,7 +169,47 @@ body, html {
 
 .main-wrapper .email-signup {
   grid-area: email-signup;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.main-wrapper .email-signup .signup-wrapper {
   background-color: #1c2431;
+  width: 50%;
+  height: 80%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+
+.main-wrapper .email-signup .signup-wrapper .input-wrapper {
+  width: 100%;
+}
+
+.main-wrapper .email-signup .signup-wrapper .input-wrapper form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-wrapper .email-signup .signup-wrapper .input-wrapper form input {
+  width: 60%;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.main-wrapper .email-signup .signup-wrapper .input-wrapper form button {
+  width: 35%;
+  padding: 15px 0;
+  border-radius: 20px;
+  font-size: 18px;
+  background-color: #339ecc;
+  color: white;
 }
 
 .main-wrapper .footer {
