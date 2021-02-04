@@ -8,20 +8,21 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: 1px solid red;
+  resize: both;
 }
 
 body, html {
   background-color: #181f2a;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   font-weight: 400;
+  font-family: "Open Sans";
 }
 
 .main-wrapper {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 900px 800px 500px 250px 300px 500px;
+  grid-template-rows: 1000px 800px 700px 250px 300px 500px;
   grid-template-areas: "intro" "benefits" "productive" "testimonial" "email-signup" "footer";
   gap: 100px;
 }
@@ -50,6 +51,11 @@ body, html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-family: Raleway;
+}
+
+.main-wrapper .intro nav img {
+  max-width: 30%;
 }
 
 .main-wrapper .intro nav ul {
@@ -63,8 +69,7 @@ body, html {
 .main-wrapper .intro nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
-  margin-left: 40px;
+  margin-left: 1em;
 }
 
 .main-wrapper .intro nav ul li a:hover, .main-wrapper .intro nav ul li a :focus {
@@ -72,6 +77,7 @@ body, html {
 }
 
 .main-wrapper .intro header {
+  max-width: 100%;
   width: 50%;
   height: 90%;
   display: flex;
@@ -88,10 +94,7 @@ body, html {
 .main-wrapper .intro header h1 {
   font-weight: 700;
   font-size: 45px;
-}
-
-.main-wrapper .intro header p {
-  font-size: 18px;
+  font-family: Raleway;
 }
 
 .main-wrapper .intro header .intro-text {
@@ -101,9 +104,25 @@ body, html {
 .main-wrapper .intro header .link a {
   text-decoration: none;
   color: white;
-  padding: 15px 70px;
+  padding: 15px 100px;
   background-color: #339ecc;
   border-radius: 20px;
+  font-family: Raleway;
+}
+
+@media screen and (max-width: 480px) {
+  .main-wrapper .intro {
+    background-image: url(images/bg-curvy-mobile.svg);
+  }
+  .main-wrapper .intro header {
+    width: 100% !important;
+  }
+  .main-wrapper .intro header h1 {
+    font-size: 30px;
+  }
+  .main-wrapper .intro header .intro-text {
+    width: 100%;
+  }
 }
 
 .main-wrapper .benefits {
@@ -117,6 +136,7 @@ body, html {
   width: 100%;
   height: 50%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -127,7 +147,6 @@ body, html {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  font-size: 16px;
 }
 
 .main-wrapper .benefits .ben-wrapper-top div img, .main-wrapper .benefits .ben-wrapper-bottom div img {
@@ -135,22 +154,37 @@ body, html {
   width: 25%;
 }
 
+@media screen and (max-width: 480px) {
+  .main-wrapper .benefits {
+    padding-top: 0;
+  }
+  .main-wrapper .benefits .ben-wrapper-top div, .main-wrapper .benefits .ben-wrapper-bottom div {
+    width: 100%;
+  }
+}
+
 .main-wrapper .productive {
   grid-area: productive;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .main-wrapper .productive div {
-  width: 40%;
   border-radius: 8px;
 }
 
+.main-wrapper .productive .illustration-wrapper {
+  width: 55%;
+}
+
 .main-wrapper .productive .illustration-wrapper img {
+  width: 100%;
   max-width: 100%;
 }
 
 .main-wrapper .productive .productive-text {
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -159,28 +193,52 @@ body, html {
 .main-wrapper .productive .productive-text h2 {
   font-size: 60px;
   font-weight: 700;
+  font-family: Raleway;
+  line-height: 1.5;
 }
 
 .main-wrapper .productive .productive-text p {
+  margin-top: 20px;
   line-height: 2;
-  font-size: 18px;
 }
 
 .main-wrapper .productive .productive-text p a {
   color: #65e2d9;
+  font-family: Raleway;
+}
+
+.main-wrapper .productive .productive-text p a img {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 480px) {
+  .main-wrapper .productive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .main-wrapper .productive .illustration-wrapper {
+    width: 100%;
+  }
+  .main-wrapper .productive .productive-text {
+    width: 100%;
+  }
+  .main-wrapper .productive .productive-text h2 {
+    font-size: 25px;
+  }
 }
 
 .main-wrapper .testimonial {
   grid-area: testimonial;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
   background-image: url(images/bg-quotes.png);
   background-repeat: no-repeat;
-  background-position: 120px 0;
+  background-position: 80px 0;
 }
 
-.main-wrapper .testimonial div {
+.main-wrapper .testimonial .singles {
   width: 30%;
   border-radius: 8px;
   background-color: #202a3c;
@@ -191,7 +249,7 @@ body, html {
   justify-content: space-evenly;
 }
 
-.main-wrapper .testimonial div .bio {
+.main-wrapper .testimonial .singles .bio {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -199,20 +257,34 @@ body, html {
   height: 30%;
 }
 
-.main-wrapper .testimonial div .bio img {
+.main-wrapper .testimonial .singles .bio img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.main-wrapper .testimonial div .bio p {
+.main-wrapper .testimonial .singles .bio p {
   font-weight: 700;
 }
 
-.main-wrapper .testimonial div .bio p span {
+.main-wrapper .testimonial .singles .bio p span {
   font-size: 14px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 480px) {
+  .main-wrapper .testimonial {
+    padding-top: 10px;
+    background-position: top left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .main-wrapper .testimonial .singles {
+    width: 100%;
+    height: 30%;
+  }
 }
 
 .main-wrapper .email-signup {
@@ -239,6 +311,7 @@ body, html {
 .main-wrapper .email-signup .signup-wrapper h2 {
   font-weight: 700;
   font-size: 30px;
+  font-family: Raleway;
 }
 
 .main-wrapper .email-signup .signup-wrapper .input-wrapper {
@@ -258,6 +331,10 @@ body, html {
   padding: 0 20px;
 }
 
+.main-wrapper .email-signup .signup-wrapper .input-wrapper form input:invalid {
+  color: red;
+}
+
 .main-wrapper .email-signup .signup-wrapper .input-wrapper form button {
   width: 35%;
   padding: 20px 0;
@@ -265,10 +342,30 @@ body, html {
   background-color: #339ecc;
   color: white;
   cursor: pointer;
+  font-family: Raleway;
 }
 
 .main-wrapper .email-signup .signup-wrapper .input-wrapper form button:hover {
   background-color: #65e2d9;
+}
+
+@media screen and (max-width: 480px) {
+  .main-wrapper .email-signup .signup-wrapper {
+    width: 100%;
+  }
+  .main-wrapper .email-signup .signup-wrapper .input-wrapper form {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-wrapper .email-signup .signup-wrapper .input-wrapper form input {
+    width: 100%;
+    height: 40px;
+  }
+  .main-wrapper .email-signup .signup-wrapper .input-wrapper form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+  }
 }
 
 .main-wrapper .footer {
@@ -315,6 +412,7 @@ body, html {
 }
 
 .main-wrapper .footer .foot-content .contact ul .call a {
+  font-family: Raleway;
   color: white;
   text-decoration: none;
 }
@@ -328,6 +426,7 @@ body, html {
 }
 
 .main-wrapper .footer .foot-content .contact ul .email a {
+  font-family: Raleway;
   color: white;
   text-decoration: none;
 }
@@ -354,6 +453,7 @@ body, html {
 }
 
 .main-wrapper .footer .foot-content .about ul li a {
+  font-family: Raleway;
   color: white;
   text-decoration: none;
 }
@@ -376,7 +476,7 @@ body, html {
   color: white;
   border: 1px solid white;
   border-radius: 50%;
-  padding: 10px;
+  padding: 10px 15px;
   margin-left: 10px;
 }
 
@@ -386,11 +486,44 @@ body, html {
 }
 
 .main-wrapper .attribution {
-  font-size: 11px;
   text-align: center;
+  font-size: 16px;
+}
+
+.main-wrapper .attribution span {
+  color: #ff4242;
 }
 
 .main-wrapper .attribution a {
   color: #65e2d9;
+}
+
+@media screen and (max-width: 480px) {
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 800px 1000px 800px 800px 400px 1000px;
+    grid-template-areas: "intro" "benefits" "productive" "testimonial" "email-signup" "footer";
+    gap: 50px;
+  }
+  .main-wrapper .footer .foot-content {
+    height: 70%;
+    flex-direction: column;
+  }
+  .main-wrapper .footer .foot-content .location, .main-wrapper .footer .foot-content .socials, .main-wrapper .footer .foot-content .about, .main-wrapper .footer .foot-content .contact {
+    width: 100%;
+  }
+  .main-wrapper .footer .foot-content .about {
+    flex-direction: column;
+    justify-content: center;
+    height: min-content;
+  }
+  .main-wrapper .footer .foot-content .socials {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .main-wrapper .footer .foot-content .socials ul {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
