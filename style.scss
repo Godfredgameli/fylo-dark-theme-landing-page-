@@ -17,7 +17,7 @@ $head_nav_button : Raleway;
 $body : "Open Sans" ;
 $normal: 400;
 $bold : 700;
-$size: 16px;
+$size: 18px;
 
 *{
     box-sizing: border-box;
@@ -35,7 +35,7 @@ body, html {
 .main-wrapper{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 900px 800px 500px 300px 300px 500px;
+    grid-template-rows: 900px 800px 500px 250px 300px 500px;
     grid-template-areas: "intro" "benefits" "productive" "testimonial" "email-signup" "footer";
     gap: 100px;
 
@@ -70,7 +70,7 @@ body, html {
                         text-decoration: none;
                         color: $white;
                         font-size: 18px;
-                        margin-right: 30px;
+                        margin-left: 40px;
 
                         &:hover, :focus{
                             text-decoration: underline;
@@ -97,7 +97,7 @@ body, html {
             p{
                 font-size: 18px;
             }
-            .into-text{
+            .intro-text{
                 width: 60%;
             }
             .link{
@@ -154,6 +154,22 @@ body, html {
                 max-width: 100%;
             }
         }
+        .productive-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                font-size: 60px;
+                font-weight: $bold;
+            }
+            p{
+                line-height: 2;
+                font-size: 18px;
+                a{
+                    color: $button_cyan;
+                }
+            }
+        }
     }
     .testimonial{
         grid-area: testimonial;
@@ -168,7 +184,69 @@ body, html {
             width: 30%;
             border-radius: 8px;
             background-color: $testimonial_bg;
-            height: 90%;
+            height: 85%;
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .bio{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                width: 100%;
+                height: 30%;
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+                p{
+                    font-weight: $bold;
+                    span{
+                        font-size: 14px;
+                        font-weight: $normal;
+                    }
+                }
+            }
+
+            // ul{
+            //     list-style-type: none;
+            //     li{
+            //         font-weight: $bold;
+            //         width: 40%;
+            //         line-height: 1;
+                    
+            //         span{
+            //             font-size: 14px;
+            //             font-weight: $normal;
+            //             margin:-50px 0 0 60px;
+            //         }
+            //     }
+            //     li::before {   
+            //         content: '';   
+            //         display: inline-block;   
+            //         height: 50px;   
+            //         width: 50px;    
+            //         background-size: 50px;   
+            //         background-image: url(images/profile-3.jpg);   
+            //         background-repeat: no-repeat; 
+            //         border-radius: 50%;  
+            //         margin-right: 10px;
+            //         background-position: center center;
+            //         vertical-align: top;
+            //     }
+            //     .patel::before{
+            //         background-image: url(images/profile-1.jpg);
+            //     }
+            //     .bruce::before::before{
+            //         background-image: url(images/profile-2.jpg);
+            //     }
+            //     .iva::before{
+            //         background-image: url(images/profile-3.jpg);
+            //     }
+            // }
         }
     }
     .email-signup{
@@ -177,15 +255,23 @@ body, html {
         display: flex;
         justify-content: center;
         align-items: flex-end;
+
         .signup-wrapper{
             background-color: $intro_signup;
-            width: 50%;
-            height: 80%;
+            width: 60%;
+            height: 100%;
             border-radius: 8px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            padding: 5%;
+            padding: 0 5%;
+            z-index: 1;
+            margin-bottom: -230px;
+
+            h2{
+                font-weight: $bold;
+                font-size: 30px;
+            }
 
             .input-wrapper{
                 width: 100%;
@@ -195,17 +281,21 @@ body, html {
                     justify-content: space-between;
                     input{
                         width: 60%;
-                        height: 50px;
+                        height: 60px;
                         border-radius: 20px;
-                        font-size: 18px;
+                        padding: 0 20px;
                     }
                     button{
                         width: 35%;
-                        padding: 15px 0;
+                        padding: 20px 0;
                         border-radius: 20px;
-                        font-size: 18px;
                         background-color: $button_blue;
                         color: $white;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: $button_cyan;
+                        }
                     }
                 }
             }
@@ -214,5 +304,110 @@ body, html {
     .footer{
         grid-area: footer;
         background-color: $footer_bg;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+
+        .foot-content{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+
+            .location{
+                width: 20%;
+                ul{
+                    padding: 0;
+                    margin-left: 20px;
+                    li{
+                        list-style-image: url(images/icon-location.svg);
+                    }
+                }
+            }
+            .contact{
+                width: 15%;
+                ul{
+                    padding: 0;
+                    margin-left: 30px;
+                    line-height: 3;
+                    .call{
+                        list-style-image: url(images/icon-phone.svg);
+                        a{
+                            color: $white;
+                            text-decoration: none;
+                            &:hover{
+                                font-weight: $bold;
+                            }
+                        }
+                    }
+                    
+                    .email{
+                        list-style-image: url(images/icon-email.svg);
+                        a{
+                            color: $white;
+                            text-decoration: none;
+                            &:hover{
+                                font-weight: $bold;
+                            }
+                        }
+                    }     
+                }
+            }
+            .about{
+                width: 30%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+
+                ul{
+                    width: 40%;
+                    line-height: 3;
+                    li{
+                        list-style: none;
+                        a{
+                            color: $white;
+                            text-decoration: none;
+
+                            &:hover{
+                                font-weight: $bold;
+                            }
+                        }
+                    }
+                }
+            }
+            .socials{
+                ul{
+                    margin-top: 10px;
+                    li{
+                        list-style: none;
+                        display: inline;
+                        a{
+                            text-decoration: none;
+                            color: $white;
+                            border: 1px solid white;
+                            border-radius: 50%;
+                            padding: 10px;
+                            margin-left: 10px;
+
+                            &:hover{
+                                color: $button_cyan;
+                                border: 1px solid $button_cyan;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        
+        a {
+          color: $button_cyan;
+        }
+      }
 }

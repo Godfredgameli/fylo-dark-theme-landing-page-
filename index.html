@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css" />
 
     <title>
@@ -19,13 +20,7 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+      
     </style>
   </head>
   <body>
@@ -42,7 +37,7 @@
         <header>
           <img src="images/illustration-intro.png" alt="" />
           <h1>All your files in one secure location, accessible anywhere.</h1>
-          <p class="into-text">
+          <p class="intro-text">
             Fylo stores all your most important files in one secure location.
             Access them wherever you need, share and collaborate with friends
             family, and co-workers.
@@ -101,7 +96,7 @@
           />
         </div>
         <div class="productive-text">
-          <h1>Stay productive, wherever you are</h1>
+          <h2>Stay productive, wherever you are</h2>
           <p>
             Never let location be an issue when accessing your files. Fylo has
             you covered for all of your file storage needs.
@@ -111,7 +106,7 @@
             for live collaboration. No email attachments required.
           </p>
           <p>
-            <a href="#">See how Fylo works</a>
+            <a href="#">See how Fylo works <img src="images/icon-arrow.svg" alt="see how it works"></a>
           </p>
         </div>
       </section>
@@ -122,9 +117,9 @@
             magnitude. Since making the switch our team has become a well-oiled
             collaboration machine.
           </p>
-          <div>
-            <img src="images/profile-1.jpg" alt="Satish Patel" />
-            <p>Satish Patel <span> Founder & CEO, Huddle</span></p>
+          <div class="bio">
+            <img src="images/profile-1.jpg" alt="Satish Patel">
+            <p>Satish Patel  <br><span> Founder & CEO, Huddle</span></p>
           </div>
         </div>
         <div>
@@ -133,9 +128,9 @@
             Since making the switch our team has become a well-oiled
             collaboration machine.
           </p>
-          <div>
-            <img src="images/profile-2.jpg" alt="Satish Patel" />
-            <p>Bruce McKenzie <span> Founder & CEO</span></p>
+          <div class="bio">
+            <img src="images/profile-2.jpg" alt="Bruce McKenzie">
+            <p>Bruce McKenzie <br><span> Founder & CEO, Huddle</span></p>
           </div>
         </div>
         <div>
@@ -144,9 +139,9 @@
             Since making the switch our team has become a well-oiled
             collaboration machine.
           </p>
-          <div>
-            <img src="images/profile-3.jpg" alt="Satish Patel" />
-            <p>Iva Boyd <span> Founder & CEO</span></p>
+          <div class="bio">
+            <img src="images/profile-3.jpg" alt="Iva Boyd">
+            <p>Bruce McKenzie <br><span> Founder & CEO, Huddle</span></p>
           </div>
         </div>
       </section>
@@ -166,20 +161,58 @@
           </div>
         </div>
       </section>
-      <footer class="footer"></footer>
-    </main>
-     Lorem ipsum dolor sit amet, consectetur adipiscing
-    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-    +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us Terms
-    Privacy
+      <footer class="footer">
+        <p><img src="images/logo.svg" alt="Logo"></p>
+        <div class="foot-content">
+          <div class="location">
+            <ul>
+              <li>
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+               elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </li>
+            </ul>
+          </div>
+          <div class="contact">
+            <ul>
+              <li class="call">
+                <a href="tel:+1-543-123-4567">+1-543-123-4567</a>
+              </li>
+              <li class="email">
+                <a href="mailto:example@fylo.com">example@fylo.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="about">
+            <p>
+              <ul>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Jobs</a> </li>
+                <li><a href="#">Press</a> </li>
+                <li><a href="#">Blog</a> </li>
+              </ul>
+              <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms</a> </li>
+                <li><a href="#">Privacy</a> </li>
+              </ul>
+            </p>
+          </div>
+          <div class="socials">
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </p>
+      </footer>
+    </main>
   </body>
 </html>
