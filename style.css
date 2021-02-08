@@ -9,6 +9,7 @@
   padding: 0;
   margin: 0;
   resize: both;
+  border: 1px solid red;
 }
 
 body, html {
@@ -110,6 +111,24 @@ body, html {
   font-family: Raleway;
 }
 
+@media screen and (max-width: 1350px) {
+  .main-wrapper .intro header {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .main-wrapper .intro header {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .main-wrapper .intro header {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .main-wrapper .intro {
     background-image: url(images/bg-curvy-mobile.svg);
@@ -140,7 +159,7 @@ body, html {
   justify-content: space-evenly;
 }
 
-.main-wrapper .benefits .ben-wrapper-top div, .main-wrapper .benefits .ben-wrapper-bottom div {
+.main-wrapper .benefits .ben-wrapper-top .ben, .main-wrapper .benefits .ben-wrapper-bottom .ben {
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -149,17 +168,57 @@ body, html {
   text-align: center;
 }
 
-.main-wrapper .benefits .ben-wrapper-top div img, .main-wrapper .benefits .ben-wrapper-bottom div img {
+.main-wrapper .benefits .ben-wrapper-top .ben img, .main-wrapper .benefits .ben-wrapper-bottom .ben img {
   height: 25%;
   width: 25%;
+}
+
+@media screen and (max-width: 1350px) {
+  .main-wrapper .benefits {
+    padding-top: 0;
+  }
+  .main-wrapper .benefits .ben-wrapper-top .ben, .main-wrapper .benefits .ben-wrapper-bottom .ben {
+    width: 40%;
+  }
+  .main-wrapper .benefits .ben-wrapper-top .ben img, .main-wrapper .benefits .ben-wrapper-bottom .ben img {
+    width: 30%;
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .main-wrapper .benefits {
+    padding-top: 0;
+  }
+  .main-wrapper .benefits .ben-wrapper-top .ben, .main-wrapper .benefits .ben-wrapper-bottom .ben {
+    width: 50%;
+  }
+  .main-wrapper .benefits .ben-wrapper-top .ben img, .main-wrapper .benefits .ben-wrapper-bottom .ben img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .main-wrapper .benefits {
+    padding-top: 0;
+  }
+  .main-wrapper .benefits .ben-wrapper-top .ben, .main-wrapper .benefits .ben-wrapper-bottom .ben {
+    width: 50%;
+  }
+  .main-wrapper .benefits .ben-wrapper-top .ben img, .main-wrapper .benefits .ben-wrapper-bottom .ben img {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .main-wrapper .benefits {
     padding-top: 0;
   }
-  .main-wrapper .benefits .ben-wrapper-top div, .main-wrapper .benefits .ben-wrapper-bottom div {
+  .main-wrapper .benefits .ben-wrapper-top .ben, .main-wrapper .benefits .ben-wrapper-bottom .ben {
     width: 100%;
+  }
+  .main-wrapper .benefits .ben-wrapper-top .ben img, .main-wrapper .benefits .ben-wrapper-bottom .ben img {
+    width: 20%;
   }
 }
 
@@ -209,6 +268,58 @@ body, html {
 
 .main-wrapper .productive .productive-text p a img {
   vertical-align: middle;
+}
+
+@media screen and (max-width: 1350px) {
+  .main-wrapper .productive {
+    justify-content: space-evenly;
+  }
+  .main-wrapper .productive .illustration-wrapper {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  .main-wrapper .productive .illustration-wrapper img {
+    height: 80%;
+  }
+  .main-wrapper .productive .productive-text {
+    width: 40%;
+  }
+  .main-wrapper .productive .productive-text h2 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .main-wrapper .productive {
+    justify-content: space-evenly;
+  }
+  .main-wrapper .productive .illustration-wrapper {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  .main-wrapper .productive .productive-text {
+    width: 40%;
+  }
+  .main-wrapper .productive .productive-text h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .main-wrapper .productive {
+    justify-content: space-evenly;
+  }
+  .main-wrapper .productive .illustration-wrapper {
+    width: 100%;
+  }
+  .main-wrapper .productive .productive-text {
+    width: 100%;
+  }
+  .main-wrapper .productive .productive-text h2 {
+    font-size: 25px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -269,8 +380,40 @@ body, html {
 }
 
 .main-wrapper .testimonial .singles .bio p span {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
+}
+
+@media screen and (max-width: 135px) {
+  .main-wrapper .testimonial {
+    background-position: top left;
+  }
+  .main-wrapper .testimonial .singles {
+    width: 32%;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .main-wrapper .testimonial {
+    background-position: 40px 0;
+  }
+  .main-wrapper .testimonial .singles {
+    width: 32%;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .main-wrapper .testimonial {
+    flex-wrap: wrap;
+    padding-top: 10px;
+    background-position: top left;
+  }
+  .main-wrapper .testimonial .singles {
+    width: 48%;
+    height: 45%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -347,6 +490,44 @@ body, html {
 
 .main-wrapper .email-signup .signup-wrapper .input-wrapper form button:hover {
   background-color: #65e2d9;
+}
+
+@media screen and (max-width: 1350px) {
+  .main-wrapper .email-signup .signup-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .main-wrapper .email-signup .signup-wrapper {
+    width: 85%;
+  }
+  .main-wrapper .email-signup .signup-wrapper .input-wrapper form input {
+    height: 40px;
+  }
+  .main-wrapper .email-signup .signup-wrapper .input-wrapper form button {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .main-wrapper .email-signup .signup-wrapper {
+    width: 90%;
+    margin-bottom: -150px;
+  }
+  .main-wrapper .email-signup .signup-wrapper .input-wrapper form {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .main-wrapper .email-signup .signup-wrapper .input-wrapper form input {
+    width: 100%;
+    height: 40px;
+  }
+  .main-wrapper .email-signup .signup-wrapper .input-wrapper form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -487,7 +668,6 @@ body, html {
 
 .main-wrapper .attribution {
   text-align: center;
-  font-size: 16px;
 }
 
 .main-wrapper .attribution span {
@@ -498,13 +678,53 @@ body, html {
   color: #65e2d9;
 }
 
+@media screen and (max-width: 980px) {
+  .main-wrapper {
+    grid-template-rows: 1000px 800px 500px 300px 300px 500px;
+  }
+  .main-wrapper .footer .foot-content .contact {
+    width: 25%;
+  }
+  .main-wrapper .footer .foot-content .about {
+    width: 25%;
+  }
+  .main-wrapper .footer .foot-content .about ul {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .main-wrapper {
+    grid-template-rows: 1000px 800px 800px 500px 250px 800px;
+    gap: 50px;
+    font-size: 14px;
+  }
+  .main-wrapper .footer .foot-content {
+    height: 70%;
+    flex-direction: column;
+  }
+  .main-wrapper .footer .foot-content .location, .main-wrapper .footer .foot-content .socials, .main-wrapper .footer .foot-content .about, .main-wrapper .footer .foot-content .contact {
+    width: 100%;
+  }
+  .main-wrapper .footer .foot-content .about {
+    flex-direction: column;
+    justify-content: center;
+    height: min-content;
+  }
+  .main-wrapper .footer .foot-content .socials {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .main-wrapper .footer .foot-content .socials ul {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .main-wrapper {
-    display: grid;
-    grid-template-columns: 100%;
     grid-template-rows: 800px 1000px 800px 800px 400px 1000px;
-    grid-template-areas: "intro" "benefits" "productive" "testimonial" "email-signup" "footer";
     gap: 50px;
+    font-size: 14px;
   }
   .main-wrapper .footer .foot-content {
     height: 70%;
