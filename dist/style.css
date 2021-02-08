@@ -317,6 +317,7 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  box-shadow: 2px 2px 10px #080606;
 }
 .main-wrapper .testimonial .singles .bio {
   display: flex;
@@ -398,6 +399,7 @@ body, html {
   padding: 0 5%;
   z-index: 1;
   margin-bottom: -230px;
+  box-shadow: 2px 2px 10px #080606;
 }
 .main-wrapper .email-signup .signup-wrapper h3 {
   font-weight: 700;
@@ -423,6 +425,7 @@ body, html {
   padding: 20px 0;
   border-radius: 20px;
   background-color: #339ecc;
+  border: #339ecc;
   color: white;
   cursor: pointer;
   font-family: Raleway;
