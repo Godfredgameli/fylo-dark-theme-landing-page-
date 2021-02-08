@@ -26,12 +26,10 @@ body, html {
   grid-template-areas: "intro" "benefits" "productive" "testimonial" "email-signup" "footer";
   gap: 100px;
 }
-
 .main-wrapper section, .main-wrapper footer {
   width: 100%;
   padding: 0 5%;
 }
-
 .main-wrapper .intro {
   grid-area: intro;
   background-color: #1c2431;
@@ -45,7 +43,6 @@ body, html {
   align-items: center;
   text-align: center;
 }
-
 .main-wrapper .intro nav {
   display: flex;
   justify-content: space-between;
@@ -53,29 +50,23 @@ body, html {
   width: 100%;
   font-family: Raleway;
 }
-
 .main-wrapper .intro nav img {
   max-width: 30%;
 }
-
 .main-wrapper .intro nav ul {
   list-style: none;
 }
-
 .main-wrapper .intro nav ul li {
   display: inline;
 }
-
 .main-wrapper .intro nav ul li a {
   text-decoration: none;
   color: white;
   margin-left: 1em;
 }
-
 .main-wrapper .intro nav ul li a:hover, .main-wrapper .intro nav ul li a :focus {
   text-decoration: underline;
 }
-
 .main-wrapper .intro header {
   max-width: 100%;
   width: 50%;
@@ -86,21 +77,17 @@ body, html {
   align-items: center;
   text-align: center;
 }
-
 .main-wrapper .intro header img {
   max-width: 100%;
 }
-
 .main-wrapper .intro header h1 {
   font-weight: 700;
   font-size: 50px;
   font-family: Raleway;
 }
-
 .main-wrapper .intro header .intro-text {
   width: 60%;
 }
-
 .main-wrapper .intro header .link a {
   text-decoration: none;
   color: white;
@@ -109,25 +96,21 @@ body, html {
   border-radius: 20px;
   font-family: Raleway;
 }
-
 @media screen and (max-width: 1350px) {
   .main-wrapper .intro header {
     width: 80%;
   }
 }
-
 @media screen and (max-width: 980px) {
   .main-wrapper .intro header {
     width: 80%;
   }
 }
-
 @media screen and (max-width: 736px) {
   .main-wrapper .intro header {
     width: 90%;
   }
 }
-
 @media screen and (max-width: 480px) {
   .main-wrapper .intro {
     background-image: url(images/bg-curvy-mobile.svg);
@@ -142,14 +125,12 @@ body, html {
     width: 100%;
   }
 }
-
 .main-wrapper .benefits {
   grid-area: benefits;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
 }
-
 .main-wrapper .benefits .ben-wrapper-top, .main-wrapper .benefits .ben-wrapper-bottom {
   width: 100%;
   height: 50%;
@@ -157,7 +138,6 @@ body, html {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .main-wrapper .benefits .ben-wrapper-top .ben, .main-wrapper .benefits .ben-wrapper-bottom .ben {
   width: 25%;
   display: flex;
@@ -166,12 +146,10 @@ body, html {
   align-items: center;
   text-align: center;
 }
-
 .main-wrapper .benefits .ben-wrapper-top .ben img, .main-wrapper .benefits .ben-wrapper-bottom .ben img {
   height: 25%;
   width: 25%;
 }
-
 @media screen and (max-width: 1350px) {
   .main-wrapper .benefits {
     padding-top: 0;
@@ -184,7 +162,6 @@ body, html {
     height: 30%;
   }
 }
-
 @media screen and (max-width: 980px) {
   .main-wrapper .benefits {
     padding-top: 0;
@@ -196,7 +173,6 @@ body, html {
     width: 35%;
   }
 }
-
 @media screen and (max-width: 736px) {
   .main-wrapper .benefits {
     padding-top: 0;
@@ -208,7 +184,6 @@ body, html {
     width: 40%;
   }
 }
-
 @media screen and (max-width: 480px) {
   .main-wrapper .benefits {
     padding-top: 0;
@@ -220,55 +195,45 @@ body, html {
     width: 20%;
   }
 }
-
 .main-wrapper .productive {
   grid-area: productive;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .main-wrapper .productive div {
   border-radius: 8px;
 }
-
 .main-wrapper .productive .illustration-wrapper {
   width: 60%;
 }
-
 .main-wrapper .productive .illustration-wrapper img {
   width: 100%;
   max-width: 100%;
 }
-
 .main-wrapper .productive .productive-text {
   width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .main-wrapper .productive .productive-text h2 {
   font-size: 50px;
   font-weight: 700;
   font-family: Raleway;
   line-height: 1.5;
 }
-
 .main-wrapper .productive .productive-text p {
   margin-top: 20px;
   line-height: 2;
 }
-
 .main-wrapper .productive .productive-text p a {
   color: #65e2d9;
   font-family: Raleway;
 }
-
 .main-wrapper .productive .productive-text p a img {
   vertical-align: middle;
 }
-
 @media screen and (max-width: 1350px) {
   .main-wrapper .productive {
     justify-content: space-evenly;
@@ -288,7 +253,6 @@ body, html {
     font-size: 40px;
   }
 }
-
 @media screen and (max-width: 980px) {
   .main-wrapper .productive {
     justify-content: space-evenly;
@@ -305,7 +269,6 @@ body, html {
     font-size: 30px;
   }
 }
-
 @media screen and (max-width: 736px) {
   .main-wrapper .productive {
     justify-content: space-evenly;
@@ -320,7 +283,6 @@ body, html {
     font-size: 25px;
   }
 }
-
 @media screen and (max-width: 480px) {
   .main-wrapper .productive {
     display: flex;
@@ -337,7 +299,6 @@ body, html {
     font-size: 25px;
   }
 }
-
 .main-wrapper .testimonial {
   grid-area: testimonial;
   display: flex;
@@ -347,7 +308,6 @@ body, html {
   background-repeat: no-repeat;
   background-position: 80px 0;
 }
-
 .main-wrapper .testimonial .singles {
   width: 30%;
   border-radius: 8px;
@@ -358,7 +318,6 @@ body, html {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
 .main-wrapper .testimonial .singles .bio {
   display: flex;
   flex-direction: row;
@@ -366,23 +325,19 @@ body, html {
   width: 100%;
   height: 30%;
 }
-
 .main-wrapper .testimonial .singles .bio img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   margin-right: 10px;
 }
-
 .main-wrapper .testimonial .singles .bio p {
   font-weight: 700;
 }
-
 .main-wrapper .testimonial .singles .bio p span {
   font-size: 12px;
   font-weight: 400;
 }
-
 @media screen and (max-width: 1350px) {
   .main-wrapper .testimonial {
     background-position: 60px 0;
@@ -392,7 +347,6 @@ body, html {
     height: 90%;
   }
 }
-
 @media screen and (max-width: 980px) {
   .main-wrapper .testimonial {
     background-position: 40px 0;
@@ -402,7 +356,6 @@ body, html {
     height: 90%;
   }
 }
-
 @media screen and (max-width: 736px) {
   .main-wrapper .testimonial {
     flex-wrap: wrap;
@@ -414,7 +367,6 @@ body, html {
     height: 45%;
   }
 }
-
 @media screen and (max-width: 480px) {
   .main-wrapper .testimonial {
     padding-top: 10px;
@@ -428,7 +380,6 @@ body, html {
     height: 30%;
   }
 }
-
 .main-wrapper .email-signup {
   grid-area: email-signup;
   text-align: center;
@@ -436,7 +387,6 @@ body, html {
   justify-content: center;
   align-items: flex-end;
 }
-
 .main-wrapper .email-signup .signup-wrapper {
   background-color: #1c2431;
   width: 60%;
@@ -449,30 +399,25 @@ body, html {
   z-index: 1;
   margin-bottom: -230px;
 }
-
 .main-wrapper .email-signup .signup-wrapper h3 {
   font-weight: 700;
   font-size: 30px;
   font-family: Raleway;
 }
-
 .main-wrapper .email-signup .signup-wrapper .input-wrapper {
   width: 100%;
 }
-
 .main-wrapper .email-signup .signup-wrapper .input-wrapper form {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-
 .main-wrapper .email-signup .signup-wrapper .input-wrapper form input {
   width: 60%;
   height: 60px;
   border-radius: 20px;
   padding: 0 20px;
 }
-
 .main-wrapper .email-signup .signup-wrapper .input-wrapper form button {
   width: 35%;
   padding: 20px 0;
@@ -482,17 +427,14 @@ body, html {
   cursor: pointer;
   font-family: Raleway;
 }
-
 .main-wrapper .email-signup .signup-wrapper .input-wrapper form button:hover {
   background-color: #65e2d9;
 }
-
 @media screen and (max-width: 1350px) {
   .main-wrapper .email-signup .signup-wrapper {
     width: 80%;
   }
 }
-
 @media screen and (max-width: 980px) {
   .main-wrapper .email-signup .signup-wrapper {
     width: 85%;
@@ -504,7 +446,6 @@ body, html {
     padding: 10px 0;
   }
 }
-
 @media screen and (max-width: 736px) {
   .main-wrapper .email-signup .signup-wrapper {
     width: 90%;
@@ -524,7 +465,6 @@ body, html {
     padding: 12px;
   }
 }
-
 @media screen and (max-width: 480px) {
   .main-wrapper .email-signup .signup-wrapper {
     width: 100%;
@@ -543,7 +483,6 @@ body, html {
     padding: 12px;
   }
 }
-
 .main-wrapper .footer {
   grid-area: footer;
   background-color: #0b1523;
@@ -551,7 +490,6 @@ body, html {
   flex-direction: column;
   justify-content: flex-end;
 }
-
 .main-wrapper .footer .foot-content {
   width: 100%;
   height: 50%;
@@ -559,58 +497,46 @@ body, html {
   justify-content: space-between;
   align-items: stretch;
 }
-
 .main-wrapper .footer .foot-content .location {
   width: 20%;
 }
-
 .main-wrapper .footer .foot-content .location ul {
   padding: 0;
   margin-left: 20px;
 }
-
 .main-wrapper .footer .foot-content .location ul li {
   list-style-image: url(images/icon-location.svg);
 }
-
 .main-wrapper .footer .foot-content .contact {
   width: 15%;
 }
-
 .main-wrapper .footer .foot-content .contact ul {
   padding: 0;
   margin-left: 30px;
   line-height: 3;
 }
-
 .main-wrapper .footer .foot-content .contact ul .call {
   list-style-image: url(images/icon-phone.svg);
 }
-
 .main-wrapper .footer .foot-content .contact ul .call a {
   font-family: Raleway;
   color: white;
   text-decoration: none;
 }
-
 .main-wrapper .footer .foot-content .contact ul .call a:hover {
   font-weight: 700;
 }
-
 .main-wrapper .footer .foot-content .contact ul .email {
   list-style-image: url(images/icon-email.svg);
 }
-
 .main-wrapper .footer .foot-content .contact ul .email a {
   font-family: Raleway;
   color: white;
   text-decoration: none;
 }
-
 .main-wrapper .footer .foot-content .contact ul .email a:hover {
   font-weight: 700;
 }
-
 .main-wrapper .footer .foot-content .about {
   width: 30%;
   height: 100%;
@@ -618,35 +544,28 @@ body, html {
   justify-content: space-between;
   align-items: stretch;
 }
-
 .main-wrapper .footer .foot-content .about ul {
   width: 40%;
   line-height: 3;
 }
-
 .main-wrapper .footer .foot-content .about ul li {
   list-style: none;
 }
-
 .main-wrapper .footer .foot-content .about ul li a {
   font-family: Raleway;
   color: white;
   text-decoration: none;
 }
-
 .main-wrapper .footer .foot-content .about ul li a:hover {
   font-weight: 700;
 }
-
 .main-wrapper .footer .foot-content .socials ul {
   margin-top: 10px;
 }
-
 .main-wrapper .footer .foot-content .socials ul li {
   list-style: none;
   display: inline;
 }
-
 .main-wrapper .footer .foot-content .socials ul li a {
   text-decoration: none;
   color: white;
@@ -655,20 +574,16 @@ body, html {
   padding: 10px 15px;
   margin-left: 10px;
 }
-
 .main-wrapper .footer .foot-content .socials ul li a:hover {
   color: #65e2d9;
   border: 1px solid #65e2d9;
 }
-
 .main-wrapper .attribution {
   text-align: center;
 }
-
 .main-wrapper .attribution span {
   color: #ff4242;
 }
-
 .main-wrapper .attribution a {
   color: #65e2d9;
 }
@@ -687,7 +602,6 @@ body, html {
     width: 48%;
   }
 }
-
 @media screen and (max-width: 980px) {
   .main-wrapper {
     grid-template-rows: 1000px 800px 500px 300px 300px 500px;
@@ -702,7 +616,6 @@ body, html {
     width: 48%;
   }
 }
-
 @media screen and (max-width: 736px) {
   .main-wrapper {
     grid-template-rows: 1000px 800px 800px 500px 250px 800px;
@@ -729,7 +642,6 @@ body, html {
     margin-top: 0;
   }
 }
-
 @media screen and (max-width: 480px) {
   .main-wrapper {
     grid-template-rows: 800px 1000px 800px 800px 400px 1000px;
@@ -756,4 +668,3 @@ body, html {
     margin-top: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
